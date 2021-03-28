@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <title>Smart City MDG</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    body {
+      background-image: url("assets/lbackground.gif");
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif;
+      font-weight: bold;
+      color: white;
+    }
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    body,
+    html {
+      height: 100%;
+      position: relative;
+      text-align: center;
+    }
+    .typing {
+      overflow: hidden; 
+      border-right: 0.15em solid orange; 
+      white-space: nowrap; 
+      margin: 0 auto; 
+      letter-spacing: 0.15em; 
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: white;
+      }
+    }
+    .container1{
+        display:none ;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="center">
+        <h1 data-aos="fade-up" data-aos-duration="3000">Smart City</h1>
+        <h2 data-aos="fade-down" data-aos-duration="3000">The Smart Way</h2>
+
+        <p class="typing"> by Million Dollar Group</p>
+      </div>
+    </div>
+    <div class="container1">
+        <div class="center">
+          <h2 >Hope you like our presentation,<br/> Here is our infographic</h2>
+        </div>
+      </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    $( ".container" ).delay(5000).fadeOut(1500)
+    $( ".container1" ).delay(6500).fadeIn(1500)
+    setTimeout(function() {
+        window.location="assets/MDGPoster.pdf"
+}, 9000);
+  </script>
+</html>
